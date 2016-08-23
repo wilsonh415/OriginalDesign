@@ -36,6 +36,6 @@ background(211,211,211);
 		x2=0;
 	}
 	if(mousePressed && mouseY < 200) {
-		x+=2;
+		x2+=2;
 		}
 	}
