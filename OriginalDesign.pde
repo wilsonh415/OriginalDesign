@@ -35,4 +35,7 @@ background(211,211,211);
 	if(x2 > 400) {
 		x2=0;
 	}
+	if(mousePressed && mouseY < 200) {
+		x+=2;
+		}
 	}
