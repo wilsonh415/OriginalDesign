@@ -19,23 +19,25 @@ background(211,211,211);
 	fill(125,125,125);
 	ellipse(x + 15, 254, 20, 20);
 	ellipse(x + 55, 254, 20, 20);
-	x += 2;
-	if(x > 400) {
-		x=0;
-	}
-	if(mousePressed && mouseY > 200) {
+	x += 1;
+
+	if(mousePressed && mouseY > 200 && mouseX > 200) {
 		x+=2;
 	}
+	if(mousePressed && mouseY > 200 && mouseX < 200) {
+		x-=3;
+	}
+	
 	fill(0,0,255);
 	rect(x2, 135, 70, 35);
 	fill(125,125,125);
 	ellipse(x2 + 15, 179, 20, 20);
 	ellipse(x2 + 55, 179, 20, 20);
-	x2 += 2;
-	if(x2 > 400) {
-		x2=0;
-	}
-	if(mousePressed && mouseY < 200) {
+	x2+=1;
+	if(mousePressed && mouseY < 200 && mouseX > 200) {
 		x2+=2;
-		}
+	}
+	if(mousePressed && mouseY < 200 && mouseX <200) {
+		x2-=3;
+	}
 	}
