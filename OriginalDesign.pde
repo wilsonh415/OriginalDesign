@@ -40,4 +40,9 @@ background(211,211,211);
 	if(mousePressed && mouseY < 200 && mouseX <200) {
 		x2-=3;
 	}
+	fill(0,255,0);
+	textSize(85);
+	if(x > 400) {
+		text("You lose!", 10, 80);
+	}
 	}
