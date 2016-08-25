@@ -45,4 +45,7 @@ background(211,211,211);
 	if(x > 400) {
 		text("You lose!", 10, 80);
 	}
+	if(x2 > 400) {
+		text("It's over!", 10, 220);
+		}
 	}
